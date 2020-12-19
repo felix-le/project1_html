@@ -1,0 +1,239 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  max-width: 6rem;
+}
+
+/* menu dropdown */
+.headerNav-pc {
+  width: 80%;
+}
+
+.menu-dropdown {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  height: 100%;
+  transition: max-height .2s ease-out;
+}
+
+.menu-dropdown> li > a {
+  padding: 0;
+  color: white;
+  background-color: inherit;
+}
+
+.menu-dropdown a {
+  background-color: gray;
+  color: white;
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+  background-color: #9a9a9a;
+}
+
+.menu-dropdown>li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  margin-right: 3rem;
+}
+.menu-dropdown>li:hover{
+  cursor: pointer;
+}
+.menu-dropdown>li:last-child {
+  margin-right: 0;
+}
+
+.sub-menu {
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0.1;
+  transition: transform 0.5s cubic-bezier(0.2, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+  transform: translateY(-10px) scaleY(0.5);
+  transform-origin: top;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 10em;
+}
+
+.menu-dropdown>li:hover>.sub-menu {
+  clip: auto;
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 2.8rem 2rem;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 1.8rem;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+/* hamburger menu  */
+.headerNav-mobile {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 4rem;
+  height: 3.2rem;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 3.3rem;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(0, -100%);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked~ul {
+  margin-top: 0;
+  right: 0;
+  transform: none;
+}
+
+
+
+@media(max-width:640px) {
+  .headerNav-pc {
+    display: none;
+  }
+
+  .headerNav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,78 @@
+
+/* Hero banner */
+.heroBanner_section{
+  padding: 0;
+}
+.heroBanner__wrapper {
+  min-height: 60rem;
+  width: 100%;
+  position: relative;
+}
+
+.heroBanner__bg {
+  background-image: url(../img/uses/herobanner.jpeg);
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  min-height: 70rem;
+  background-position: 0% 30%; 
+}
+.overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: black;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.heroBanner__text {
+   top: 0;
+  left: 0;
+  z-index: 3;
+  position: absolute;
+  color: white;
+  letter-spacing: 1px;
+  padding: 2rem 3rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.heroBanner__text h1{
+  margin-bottom: 2rem;
+}
+
+.the_song__wrapper a { 
+  color: #F9A7A7;
+}
+.the_song__title, .lyricSong__wrapper p{
+  padding-bottom: 10px;
+}
+
+.highlight{
+  font-size: 5.8rem;
+  color: red;
+  
+}
+
+
+aside {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  width: 20rem;
+  /* padding: 0 40px; */
+  text-align: right;
+  color: #f89800;
+  padding-right: 4rem;
+}
+/* End hero banner */
