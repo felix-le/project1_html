@@ -9,22 +9,22 @@
     <div class="headerNav-pc">
       <ul class="menu-dropdown">
         <li>
-          <a href="#">About product</a>
+          <a href="./index.php#Masterpieces">About product</a>
           <ul class="sub-menu">
-            <li><a href="#masterpieces">Masterpieces</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="./index.php#masterpieces">Masterpieces</a></li>
+            <li><a href="./index.php#testimonials">Testimonials</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Feedback</a>
+          <a href="./index.php#cassette_screen">Feedback</a>
           <ul class="sub-menu">
-            <li><a href="#cassette_screen">Cassette screen</a></li>
-            <li><a href="#product">Product information</a></li>
-            <li><a href="#feedback_form_section">Feedback form</a></li>
+            <li><a href="./index.php#cassette_screen">Cassette screen</a></li>
+            <li><a href="./index.php#product">Product information</a></li>
+            <li><a href="./index.php#feedback_form_section">Feedback form</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Privacy Policy</a>
+          <a href="./policies.php">Privacy Policy</a>
           <ul class="sub-menu">
           <li><a href="./policies.php">Privacy Policy</a></li>
             <li><a href="./policies.php#personal-information">Use of Personal Information</a></li>
@@ -40,19 +40,19 @@
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="#">
+            <a href="./index.php">
               <li>Home</li>
             </a>
-            <a href="#">
-              <li>About</li>
+            <a href="./index.php#cassette_screen">
+              <li>Picture</li>
             </a>
-            <a href="#">
-              <li>Info</li>
+            <a href="./policies.php">
+              <li>Privacy Policy</li>
             </a>
-            <a href="#">
-              <li>Contact</li>
+            <a href="./index.php#feedback_form_section">
+              <li>Feedback</li>
             </a>
-            <a href="https://erikterwan.com/" target="_blank">
+            <a href="https://github.com/vietanhcoder" target="_blank">
               <li>Show me more</li>
             </a>
           </ul>

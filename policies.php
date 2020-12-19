@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="policy_page">
   <main>
     <header>
     <?php

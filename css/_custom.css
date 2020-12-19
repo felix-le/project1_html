@@ -687,11 +687,11 @@ footer {
 /* thank you page */
 
 
-body.thank-you header{
+body.thank-you, body.policy_page header{
   background: #d3d3d3;
   position: relative;
 }
-.thank-you-page{
+body.policy_page main, .thank-you-page{
   margin-top: 64px;
   text-align:center; 
 }
