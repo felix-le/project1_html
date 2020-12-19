@@ -26,7 +26,7 @@
         <div class="overlay"></div>
         <div class="heroBanner__text">
           <h1>Listen to your favorite songs
-            everywhere with <br /> only <br /> <span class="highlight">$20</span>
+            anywhere with <br /> only <br /> <span class="highlight">$20</span>
           </h1>
           <!-- Article  -->
           <article class="the_song__wrapper">

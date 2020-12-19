@@ -692,7 +692,6 @@ body.thank-you, body.policy_page header{
   position: relative;
 }
 body.policy_page main, .thank-you-page{
-  margin-top: 64px;
   text-align:center; 
 }
 
