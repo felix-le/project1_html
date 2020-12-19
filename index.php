@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="space"></div>
-        <div class="screen">
+        <div class="screen" id="cassette_screen">
           <h1 class="text_center">- Cassette SCREEN -</h1>
           <div class="space--details"></div>
           <div class="screen__cassette text_center">

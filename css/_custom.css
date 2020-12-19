@@ -683,3 +683,16 @@ footer {
   padding:20px;
   background:rgb(70, 113, 198);
 }
+
+/* thank you page */
+
+
+body.thank-you header{
+  background: #d3d3d3;
+  position: relative;
+}
+.thank-you-page{
+  margin-top: 64px;
+  text-align:center; 
+}
+

@@ -2,29 +2,32 @@
 <div class="container">
   <div class="header-wrapper">
     <div class="header-logo">
+      <a href="http://15.222.122.223/~Le200443551/comp1002/project1_html/">
       <img src="./img/uses/cassette.svg" alt="header logo">
+    </a>
     </div>
     <div class="headerNav-pc">
       <ul class="menu-dropdown">
         <li>
-          <a href="#">Item 1</a>
+          <a href="#">About product</a>
           <ul class="sub-menu">
-            <li><a href="#">Child 1</a></li>
-            <li><a href="#">Child 2</a></li>
+            <li><a href="#masterpieces">Masterpieces</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Item 2</a>
+          <a href="#">Feedback</a>
           <ul class="sub-menu">
-            <li><a href="#">Child 1</a></li>
-            <li><a href="#">Child 2</a></li>
+            <li><a href="#cassette_screen">Cassette screen</a></li>
+            <li><a href="#product">Product information</a></li>
+            <li><a href="#feedback_form_section">Feedback form</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Item 3</a>
+          <a href="#">Privacy Policy</a>
           <ul class="sub-menu">
-            <li><a href="#">Child 1</a></li>
-            <li><a href="#">Child 2</a></li>
+          <li><a href="./policies.php">Privacy Policy</a></li>
+            <li><a href="./policies.php#personal-information">Use of Personal Information</a></li>
           </ul>
         </li>
       </ul>
