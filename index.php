@@ -10,68 +10,14 @@
   <title>Cassette player Promotion for Chrismart</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
   <main>
     <header>
-      <div class="container">
-        <div class="header-wrapper">
-          <div class="header-logo">
-            <img src="./img/uses/cassette.svg" alt="header logo">
-          </div>
-          <div class="headerNav-pc">
-            <ul class="menu-dropdown">
-              <li>
-                <a href="#">Item 1</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Child 1</a></li>
-                  <li><a href="#">Child 2</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Item 2</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Child 1</a></li>
-                  <li><a href="#">Child 2</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Item 3</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Child 1</a></li>
-                  <li><a href="#">Child 2</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="headerNav-mobile">
-            <nav role="navigation" class="hamburger">
-              <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                  <a href="#">
-                    <li>Home</li>
-                  </a>
-                  <a href="#">
-                    <li>About</li>
-                  </a>
-                  <a href="#">
-                    <li>Info</li>
-                  </a>
-                  <a href="#">
-                    <li>Contact</li>
-                  </a>
-                  <a href="https://erikterwan.com/" target="_blank">
-                    <li>Show me more</li>
-                  </a>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
+      <?php
+	// Grab the global navigation HTML 
+	include '/home/Le200443551/public_html/comp1002/project1_html/includes/global-nav.php';
+    ?>
     </header>
     <section class="heroBanner_section">
       <div class="heroBanner__wrapper">
@@ -97,7 +43,7 @@
                 Wrecking balls inside my brain <br />
                 I will scream them loud tonight<br />
                 Can you hear my voice this time?<br />
-  
+
               </p>
               <span class="lyricSong__sources"> <em> Source: <a href="https://www.lyricfind.com/"
                     target="_blank" class="lyricSong__sources__link">LyricFind</a> </em></span>
@@ -112,7 +58,8 @@
           <h2 class="section__title">Masterpieces from the future</h2>
           <div class="section__body">
             <p>
-              The tape’s comeback has caught the industry off guard, with manufacturers struggling to
+              The tape’s comeback has caught the industry off guard, with manufacturers struggling
+              to
               get their hands on the magnetic tape needed for their production when demand suddenly
               picked up. The BPI, the record labels association, predicts music fans, many of them
               under 25, will buy 100,000 tapes in 2019, double the figure for 2018.
@@ -237,7 +184,19 @@
           </div>
         </div>
     </section>
-
+    <section id="feedback_form_section">
+      <div class="container">
+        <div class="form_wrapper">
+          <form action="thankyou.php" method="get" id="feedback_form">
+            <label for="emailAddress">Email</label>
+            <input type="email" name="emailAddress" id="emailAddress" required />
+            <label for="feedback_textarea">FeedBack</label>
+            <button type="submit">send</button>
+          </form>
+          <textarea name="comment" rows="4" cols="50" form="feedback_form" id="feedback_textarea" placeholder="Enter text here..."></textarea>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <a target="_blank" href="https://www.facebook.com/felix.leCoder">Copyright Felix Le</a>
